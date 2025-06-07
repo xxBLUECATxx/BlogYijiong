@@ -1,0 +1,24 @@
+{
+  "id": "investment/index",
+  "title": "index",
+  "description": "",
+  "source": "@site/docs/investment/index.md",
+  "sourceDirName": "investment",
+  "slug": "/investment/",
+  "permalink": "/docs/investment/",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/investment/index.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "Investment",
+    "permalink": "/docs/category/investment"
+  },
+  "next": {
+    "title": "Tutorial - Basics",
+    "permalink": "/docs/category/tutorial---basics"
+  }
+}
