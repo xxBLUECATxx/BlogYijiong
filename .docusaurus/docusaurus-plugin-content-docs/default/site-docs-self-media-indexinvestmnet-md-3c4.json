@@ -1,0 +1,26 @@
+{
+  "id": "self-media/indexinvestmnet",
+  "title": "知乎",
+  "description": "目前正在研究視頻收益，每個搬運的視頻都只有幾百播放，而且目前還沒有真正的收益進賬，可能再做一個月？",
+  "source": "@site/docs/self-media/indexinvestmnet.md",
+  "sourceDirName": "self-media",
+  "slug": "/self-media/indexinvestmnet",
+  "permalink": "/docs/self-media/indexinvestmnet",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/self-media/indexinvestmnet.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "知乎"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "自媒體兒",
+    "permalink": "/docs/category/自媒體兒"
+  },
+  "next": {
+    "title": "Hi!",
+    "permalink": "/docs/Investment"
+  }
+}

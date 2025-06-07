@@ -8,13 +8,8 @@
           "label": "Next",
           "isLast": true,
           "path": "/docs",
-          "mainDocId": "intro",
+          "mainDocId": "investment/indexinvestmnet",
           "docs": [
-            {
-              "id": "intro",
-              "path": "/docs/intro",
-              "sidebar": "tutorialSidebar"
-            },
             {
               "id": "Investment",
               "path": "/docs/Investment",
@@ -23,6 +18,11 @@
             {
               "id": "investment/indexinvestmnet",
               "path": "/docs/investment/indexinvestmnet",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "self-media/indexinvestmnet",
+              "path": "/docs/self-media/indexinvestmnet",
               "sidebar": "tutorialSidebar"
             },
             {
@@ -71,13 +71,8 @@
               "sidebar": "tutorialSidebar"
             },
             {
-              "id": "/category/tutorial---basics",
-              "path": "/docs/category/tutorial---basics",
-              "sidebar": "tutorialSidebar"
-            },
-            {
-              "id": "/category/tutorial---extras",
-              "path": "/docs/category/tutorial---extras",
+              "id": "/category/自媒體兒",
+              "path": "/docs/category/自媒體兒",
               "sidebar": "tutorialSidebar"
             }
           ],
@@ -85,8 +80,8 @@
           "sidebars": {
             "tutorialSidebar": {
               "link": {
-                "path": "/docs/intro",
-                "label": "intro"
+                "path": "/docs/category/investment",
+                "label": "Investment"
               }
             }
           }

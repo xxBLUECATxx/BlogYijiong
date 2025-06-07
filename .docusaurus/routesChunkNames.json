@@ -249,34 +249,26 @@
     },
     "content": "content---markdown-page-393-028"
   },
-  "/docs-da1": {
+  "/docs-679": {
     "__comp": "__comp---theme-docs-root-5-e-9-0b6",
     "__context": {
       "plugin": "plugin---docsaba-d7c"
     }
   },
-  "/docs-7c1": {
+  "/docs-e5b": {
     "__comp": "__comp---theme-doc-version-roota-7-b-5de",
     "__props": "__props---docs-005-788"
   },
-  "/docs-662": {
+  "/docs-c51": {
     "__comp": "__comp---theme-doc-roota-94-67a"
+  },
+  "/docs/category/自媒體兒-728": {
+    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
+    "__props": "__props---docs-category-自媒體兒c-8-a-b98"
   },
   "/docs/category/investment-2bd": {
     "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
     "__props": "__props---docs-category-investment-9-e-5-b17"
-  },
-  "/docs/category/tutorial---basics-20e": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-tutorial-basicsc-8-a-e51"
-  },
-  "/docs/category/tutorial---extras-9ad": {
-    "__comp": "__comp---theme-doc-category-generated-index-page-14-e-640",
-    "__props": "__props---docs-category-tutorial-extras-6-bb-a82"
-  },
-  "/docs/intro-61d": {
-    "__comp": "__comp---theme-doc-item-178-a40",
-    "content": "content---docs-intro-0-e-3-be1"
   },
   "/docs/Investment-762": {
     "__comp": "__comp---theme-doc-item-178-a40",
@@ -285,6 +277,10 @@
   "/docs/investment/indexinvestmnet-131": {
     "__comp": "__comp---theme-doc-item-178-a40",
     "content": "content---docs-investment-indexinvestmnet-179-212"
+  },
+  "/docs/self-media/indexinvestmnet-903": {
+    "__comp": "__comp---theme-doc-item-178-a40",
+    "content": "content---docs-self-media-indexinvestmnet-3-c-4-ee5"
   },
   "/docs/tutorial-basics/congratulations-458": {
     "__comp": "__comp---theme-doc-item-178-a40",

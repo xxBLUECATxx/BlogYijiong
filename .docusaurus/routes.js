@@ -114,37 +114,25 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', 'da1'),
+    component: ComponentCreator('/docs', '679'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '7c1'),
+        component: ComponentCreator('/docs', 'e5b'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '662'),
+            component: ComponentCreator('/docs', 'c51'),
             routes: [
+              {
+                path: '/docs/category/自媒體兒',
+                component: ComponentCreator('/docs/category/自媒體兒', '728'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
               {
                 path: '/docs/category/investment',
                 component: ComponentCreator('/docs/category/investment', '2bd'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/category/tutorial---basics',
-                component: ComponentCreator('/docs/category/tutorial---basics', '20e'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/category/tutorial---extras',
-                component: ComponentCreator('/docs/category/tutorial---extras', '9ad'),
-                exact: true,
-                sidebar: "tutorialSidebar"
-              },
-              {
-                path: '/docs/intro',
-                component: ComponentCreator('/docs/intro', '61d'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
@@ -157,6 +145,12 @@ export default [
               {
                 path: '/docs/investment/indexinvestmnet',
                 component: ComponentCreator('/docs/investment/indexinvestmnet', '131'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/self-media/indexinvestmnet',
+                component: ComponentCreator('/docs/self-media/indexinvestmnet', '903'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               },
