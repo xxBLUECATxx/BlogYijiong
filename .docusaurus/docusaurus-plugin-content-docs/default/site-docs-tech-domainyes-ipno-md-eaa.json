@@ -1,0 +1,24 @@
+{
+  "id": "tech/domainyes_ipno",
+  "title": "domainyes_ipno",
+  "description": "",
+  "source": "@site/docs/tech/domainyes_ipno.md",
+  "sourceDirName": "tech",
+  "slug": "/tech/domainyes_ipno",
+  "permalink": "/docs/tech/domainyes_ipno",
+  "draft": false,
+  "unlisted": false,
+  "editUrl": "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/tech/domainyes_ipno.md",
+  "tags": [],
+  "version": "current",
+  "frontMatter": {},
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "技術",
+    "permalink": "/docs/category/技術"
+  },
+  "next": {
+    "title": "Create a Page",
+    "permalink": "/docs/tutorial-basics/create-a-page"
+  }
+}

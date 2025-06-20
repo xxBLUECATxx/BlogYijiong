@@ -1,0 +1,25 @@
+{
+  "id": "self-media/tiktok",
+  "title": "抖音",
+  "description": "我的抖音：迷因黃狗熊",
+  "source": "@site/docs/self-media/tiktok.md",
+  "sourceDirName": "self-media",
+  "slug": "/self-media/tiktok",
+  "permalink": "/docs/self-media/tiktok",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "抖音"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "知乎",
+    "permalink": "/docs/self-media/indexinvestmnet"
+  },
+  "next": {
+    "title": "技術",
+    "permalink": "/docs/category/技術"
+  }
+}

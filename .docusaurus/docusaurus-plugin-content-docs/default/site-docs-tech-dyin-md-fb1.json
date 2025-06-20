@@ -1,0 +1,21 @@
+{
+  "id": "tech/dyin",
+  "title": "域名能進，IP直連不行？",
+  "description": "今天碰到一件很吊詭的事情，網站可以通過域名訪問但是卻不能通過IP直連，見下圖：",
+  "source": "@site/docs/tech/dyin.md",
+  "sourceDirName": "tech",
+  "slug": "/tech/dyin",
+  "permalink": "/docs/tech/dyin",
+  "draft": false,
+  "unlisted": false,
+  "tags": [],
+  "version": "current",
+  "frontMatter": {
+    "sidebar_label": "安全證書問題"
+  },
+  "sidebar": "tutorialSidebar",
+  "previous": {
+    "title": "技術",
+    "permalink": "/docs/category/技術"
+  }
+}
