@@ -4,6 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+
 const config: Config = {
   title:'BlogYijiong - 博客黃狗熊',
   tagline: 'You can be anyone',
@@ -18,7 +19,7 @@ const config: Config = {
   url: 'https://xxbluecatxx.github.io.',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/blogyijiong/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -36,6 +37,8 @@ const config: Config = {
     locales: ['en'],
   },
 
+
+
   presets: [
     [
       'classic',
@@ -43,9 +46,6 @@ const config: Config = {
         docs: {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -54,9 +54,6 @@ const config: Config = {
             xslt: true,
           },
           // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -65,12 +62,20 @@ const config: Config = {
         theme: {
           customCss: './src/css/custom.css',
         },
+        
       } satisfies Preset.Options,
     ],
   ],
 
   themeConfig: {
     // Replace with your project's social card
+     colorMode: {
+      defaultMode: 'dark',
+      disableSwitch: false,
+      respectPrefersColorScheme: false,
+    },
+
+
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
       title: 'BlogYijiong',
