@@ -23,9 +23,9 @@
 }
 
 .markdownContainer {
-    max-width: 600px;
+    max-width: 1000px;
     align-self: center;
-    margin-top: 100px;
+    margin-top: 70px;
     padding: 2rem;
     background: rgb(66, 64, 64);
     border-radius: 12px;

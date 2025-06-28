@@ -25,7 +25,7 @@ function HomepageHeader() {
   );
 }
 import Mywords from './_mywords.md';
-import MyBell from './ring-the-bell.html';
+
 
 
 export default function Home(): ReactNode {
@@ -38,12 +38,21 @@ export default function Home(): ReactNode {
         <HomepageHeader />
          <div className={styles.markdownContainer}>
             <Mywords/>
-            <div>
-               put a bel here to let you ring
-            </div>
+            <MyGame/>    
         </div>
 
     </Layout>
   );
 }
+
+const MyGame: React.FC = () => {
+    return (
+        <iframe 
+            src="/game.html" 
+            width="800" 
+            height="400" 
+            style={{ border: 'none' }} 
+        />
+    );
+};
 

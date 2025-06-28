@@ -1,0 +1,68 @@
+{
+  "docusaurus-plugin-content-docs": {
+    "default": {
+      "path": "/docs",
+      "versions": [
+        {
+          "name": "current",
+          "label": "Next",
+          "isLast": true,
+          "path": "/docs",
+          "mainDocId": "investment/indexinvestmnet",
+          "docs": [
+            {
+              "id": "investment/indexinvestmnet",
+              "path": "/docs/investment/indexinvestmnet",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "self-media/indexinvestmnet",
+              "path": "/docs/self-media/indexinvestmnet",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "self-media/tiktok",
+              "path": "/docs/self-media/tiktok",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tech/dyin",
+              "path": "/docs/tech/dyin",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "tech/Service-ExecStart-Path-Aliyun",
+              "path": "/docs/tech/Service-ExecStart-Path-Aliyun",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/investment",
+              "path": "/docs/category/investment",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/自媒體兒",
+              "path": "/docs/category/自媒體兒",
+              "sidebar": "tutorialSidebar"
+            },
+            {
+              "id": "/category/技術",
+              "path": "/docs/category/技術",
+              "sidebar": "tutorialSidebar"
+            }
+          ],
+          "draftIds": [],
+          "sidebars": {
+            "tutorialSidebar": {
+              "link": {
+                "path": "/docs/category/investment",
+                "label": "Investment"
+              }
+            }
+          }
+        }
+      ],
+      "breadcrumbs": true
+    }
+  }
+}

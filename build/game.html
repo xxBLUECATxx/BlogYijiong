@@ -1,0 +1,379 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Jumper</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            font-family: 'Courier New', monospace;
+            overflow: hidden;
+            user-select: none;
+        }
+        
+        #game-container {
+            position: relative;
+            width: 800px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            border: 4px solid #333;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        #ground {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 20px;
+            background-color: #555;
+            background-image: 
+                linear-gradient(45deg, #444 25%, transparent 25%),
+                linear-gradient(-45deg, #444 25%, transparent 25%),
+                linear-gradient(45deg, transparent 75%, #444 75%),
+                linear-gradient(-45deg, transparent 75%, #444 75%);
+            background-size: 20px 20px;
+        }
+        
+        #player {
+            position: absolute;
+            width: 40px;
+            height: 60px;
+            bottom: 20px;
+            left: 50px;
+            background-color: #4a7;
+            image-rendering: pixelated;
+        }
+        
+        .obstacle {
+            position: absolute;
+            width: 30px;
+            height: 50px;
+            bottom: 20px;
+            background-color: #c44;
+            image-rendering: pixelated;
+        }
+        
+        .cloud {
+            position: absolute;
+            width: 60px;
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            image-rendering: pixelated;
+        }
+        
+        #score-display {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 20px;
+            color: #333;
+        }
+        
+        #game-over {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            display: none;
+        }
+        
+        #start-screen {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.9);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
+        
+        #start-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #4a7;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            font-family: 'Courier New', monospace;
+        }
+        
+        #start-button:hover {
+            background-color: #3a6;
+        }
+        
+        .pixel-art {
+            image-rendering: pixelated;
+        }
+        
+        #player::before, #player::after {
+            content: '';
+            position: absolute;
+            background-color: #3a6;
+        }
+        
+        /* Pixel art details for player */
+        #player::before {
+            width: 10px;
+            height: 10px;
+            top: 10px;
+            left: 5px;
+            box-shadow: 
+                20px 0 0 #3a6,
+                0 10px 0 #3a6,
+                20px 10px 0 #3a6,
+                0 20px 0 #3a6,
+                20px 20px 0 #3a6,
+                0 30px 0 #3a6,
+                20px 30px 0 #3a6;
+        }
+        
+        #player::after {
+            width: 10px;
+            height: 10px;
+            top: 40px;
+            left: 15px;
+            box-shadow: 
+                0 10px 0 #3a6;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="ground"></div>
+        <div id="player"></div>
+        <div id="score-display">Score: 0</div>
+        
+        <div id="game-over">
+            <h2>GAME OVER</h2>
+            <p>Final Score: <span id="final-score">0</span></p>
+            <button id="restart-button">Play Again</button>
+        </div>
+        
+        <div id="start-screen">
+            <h1>PIXEL JUMPER</h1>
+            <p>Press SPACE or UP ARROW to jump</p>
+            <p>Avoid the obstacles!</p>
+            <button id="start-button">START GAME</button>
+        </div>
+    </div>
+
+    <script>
+        // Game variables
+        let gameRunning = false;
+        let score = 0;
+        let speed = 5;
+        let gravity = 0.5;
+        let playerVelocity = 0;
+        let isJumping = false;
+        let obstacleInterval;
+        let cloudInterval;
+        let animationFrame;
+        let obstacles = [];
+        let clouds = [];
+        
+        // DOM elements
+        const gameContainer = document.getElementById('game-container');
+        const player = document.getElementById('player');
+        const scoreDisplay = document.getElementById('score-display');
+        const gameOverScreen = document.getElementById('game-over');
+        const finalScoreDisplay = document.getElementById('final-score');
+        const restartButton = document.getElementById('restart-button');
+        const startScreen = document.getElementById('start-screen');
+        const startButton = document.getElementById('start-button');
+        
+        // Event listeners
+        document.addEventListener('keydown', handleKeyDown);
+        startButton.addEventListener('click', startGame);
+        restartButton.addEventListener('click', restartGame);
+        
+        // Game functions
+        function startGame() {
+            startScreen.style.display = 'none';
+            gameRunning = true;
+            score = 0;
+            speed = 5;
+            
+            // Clear any existing obstacles
+            obstacles.forEach(obstacle => obstacle.element.remove());
+            obstacles = [];
+            
+            // Clear clouds
+            clouds.forEach(cloud => cloud.element.remove());
+            clouds = [];
+            
+            // Reset player position
+            player.style.bottom = '20px';
+            playerVelocity = 0;
+            isJumping = false;
+            
+            // Start game loops
+            obstacleInterval = setInterval(createObstacle, 2000);
+            cloudInterval = setInterval(createCloud, 3000);
+            animationFrame = requestAnimationFrame(gameLoop);
+        }
+        
+        function restartGame() {
+            gameOverScreen.style.display = 'none';
+            startGame();
+        }
+        
+        function gameLoop() {
+            if (!gameRunning) return;
+            
+            // Update player position
+            playerVelocity -= gravity;
+            let newBottom = parseFloat(player.style.bottom) + playerVelocity;
+            
+            if (newBottom <= 20) {
+                newBottom = 20;
+                playerVelocity = 0;
+                isJumping = false;
+            }
+            
+            player.style.bottom = newBottom + 'px';
+            
+            // Update obstacles
+            obstacles.forEach((obstacle, index) => {
+                const currentLeft = parseFloat(obstacle.element.style.left);
+                obstacle.element.style.left = (currentLeft - speed) + 'px';
+                
+                // Remove obstacles that are off screen
+                if (currentLeft < -30) {
+                    obstacle.element.remove();
+                    obstacles.splice(index, 1);
+                    score++;
+                    scoreDisplay.textContent = `Score: ${score}`;
+                    
+                    // Increase speed every 10 points
+                    if (score % 10 === 0) {
+                        speed += 0.5;
+                    }
+                }
+                
+                // Check for collisions
+                if (
+                    currentLeft < 90 && 
+                    currentLeft > 20 && 
+                    parseFloat(player.style.bottom) < 70
+                ) {
+                    gameOver();
+                }
+            });
+            
+            // Update clouds
+            clouds.forEach((cloud, index) => {
+                const currentLeft = parseFloat(cloud.element.style.left);
+                cloud.element.style.left = (currentLeft - speed/2) + 'px';
+                
+                // Remove clouds that are off screen
+                if (currentLeft < -60) {
+                    cloud.element.remove();
+                    clouds.splice(index, 1);
+                }
+            });
+            
+            animationFrame = requestAnimationFrame(gameLoop);
+        }
+        
+        function createObstacle() {
+            if (!gameRunning) return;
+            
+            const obstacle = document.createElement('div');
+            obstacle.className = 'obstacle pixel-art';
+            obstacle.style.left = '800px';
+            
+            // Random height for variety
+            const height = Math.random() > 0.5 ? 50 : 30;
+            obstacle.style.height = height + 'px';
+            obstacle.style.bottom = (20 + (height === 30 ? 20 : 0)) + 'px';
+            
+            // Add pixel details
+            obstacle.innerHTML = `
+                <div style="position: absolute; width: 10px; height: 10px; background-color: #a33; 
+                    top: 10px; left: 5px; box-shadow: 
+                    20px 0 0 #a33,
+                    0 10px 0 #a33,
+                    20px 10px 0 #a33,
+                    0 20px 0 #a33,
+                    20px 20px 0 #a33;"></div>
+            `;
+            
+            gameContainer.appendChild(obstacle);
+            obstacles.push({ element: obstacle });
+        }
+        
+        function createCloud() {
+            if (!gameRunning) return;
+            
+            const cloud = document.createElement('div');
+            cloud.className = 'cloud pixel-art';
+            cloud.style.left = '800px';
+            cloud.style.top = (20 + Math.random() * 100) + 'px';
+            
+            // Random width for variety
+            const width = 40 + Math.random() * 40;
+            cloud.style.width = width + 'px';
+            
+            gameContainer.appendChild(cloud);
+            clouds.push({ element: cloud });
+        }
+        
+        function jump() {
+            if (isJumping) return;
+            
+            playerVelocity = 12;
+            isJumping = true;
+            
+            // Add jump animation
+            player.style.transform = 'translateY(-5px)';
+            setTimeout(() => {
+                player.style.transform = 'translateY(0)';
+            }, 200);
+        }
+        
+        function gameOver() {
+            gameRunning = false;
+            clearInterval(obstacleInterval);
+            clearInterval(cloudInterval);
+            cancelAnimationFrame(animationFrame);
+            
+            finalScoreDisplay.textContent = score;
+            gameOverScreen.style.display = 'block';
+        }
+        
+        function handleKeyDown(e) {
+            if ((e.code === 'Space' || e.key === ' ' || e.key === 'ArrowUp') && gameRunning) {
+                jump();
+            }
+            
+            // Start game with any key if on start screen
+            if (startScreen.style.display !== 'none') {
+                startGame();
+            }
+        }
+        
+        // Initialize pixel art player
+        function initPlayer() {
+            // Already defined in CSS with pseudo-elements
+        }
+        
+        initPlayer();
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+> my-website@0.0.0 serve
+> docusaurus serve --host 0.0.0.0 --port 8001
+
+[SUCCESS] Serving "build" directory at: http://0.0.0.0:8001/
+
+> my-website@0.0.0 serve
+> docusaurus serve --host 0.0.0.0 --port 8001
+
+[SUCCESS] Serving "build" directory at: http://0.0.0.0:8001/
+
+> my-website@0.0.0 serve
+> docusaurus serve --host 0.0.0.0 --port 8001
+
+[SUCCESS] Serving "build" directory at: http://0.0.0.0:8001/
+
+> my-website@0.0.0 serve
+> docusaurus serve --host 0.0.0.0 --port 8001
+
+[SUCCESS] Serving "build" directory at: http://0.0.0.0:8001/
