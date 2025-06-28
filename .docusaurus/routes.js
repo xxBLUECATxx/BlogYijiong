@@ -4,7 +4,7 @@ import ComponentCreator from '@docusaurus/ComponentCreator';
 export default [
   {
     path: '/blog',
-    component: ComponentCreator('/blog', 'b2f'),
+    component: ComponentCreator('/blog', 'c46'),
     exact: true
   },
   {
@@ -18,23 +18,8 @@ export default [
     exact: true
   },
   {
-    path: '/blog/authors/all-sebastien-lorber-articles',
-    component: ComponentCreator('/blog/authors/all-sebastien-lorber-articles', '4a1'),
-    exact: true
-  },
-  {
-    path: '/blog/authors/yangshun',
-    component: ComponentCreator('/blog/authors/yangshun', 'a68'),
-    exact: true
-  },
-  {
-    path: '/blog/first-blog-post',
-    component: ComponentCreator('/blog/first-blog-post', '89a'),
-    exact: true
-  },
-  {
-    path: '/blog/long-blog-post',
-    component: ComponentCreator('/blog/long-blog-post', '9ad'),
+    path: '/blog/authors/yijiong',
+    component: ComponentCreator('/blog/authors/yijiong', 'a80'),
     exact: true
   },
   {
@@ -49,7 +34,7 @@ export default [
   },
   {
     path: '/blog/tags/docusaurus',
-    component: ComponentCreator('/blog/tags/docusaurus', '704'),
+    component: ComponentCreator('/blog/tags/docusaurus', 'bec'),
     exact: true
   },
   {
@@ -59,12 +44,17 @@ export default [
   },
   {
     path: '/blog/tags/hello',
-    component: ComponentCreator('/blog/tags/hello', '299'),
+    component: ComponentCreator('/blog/tags/hello', '4ad'),
     exact: true
   },
   {
-    path: '/blog/tags/hola',
-    component: ComponentCreator('/blog/tags/hola', '00d'),
+    path: '/blog/tags/travelling',
+    component: ComponentCreator('/blog/tags/travelling', 'b99'),
+    exact: true
+  },
+  {
+    path: '/blog/trip to Beijing InnerMongolia',
+    component: ComponentCreator('/blog/trip to Beijing InnerMongolia', '8b1'),
     exact: true
   },
   {
@@ -79,15 +69,15 @@ export default [
   },
   {
     path: '/docs',
-    component: ComponentCreator('/docs', '169'),
+    component: ComponentCreator('/docs', '1ca'),
     routes: [
       {
         path: '/docs',
-        component: ComponentCreator('/docs', '742'),
+        component: ComponentCreator('/docs', 'e92'),
         routes: [
           {
             path: '/docs',
-            component: ComponentCreator('/docs', '472'),
+            component: ComponentCreator('/docs', '0f7'),
             routes: [
               {
                 path: '/docs/category/investment',
@@ -128,6 +118,12 @@ export default [
               {
                 path: '/docs/tech/dyin',
                 component: ComponentCreator('/docs/tech/dyin', 'ab5'),
+                exact: true,
+                sidebar: "tutorialSidebar"
+              },
+              {
+                path: '/docs/tech/Service-ExecStart-Path-Aliyun',
+                component: ComponentCreator('/docs/tech/Service-ExecStart-Path-Aliyun', '3cf'),
                 exact: true,
                 sidebar: "tutorialSidebar"
               }

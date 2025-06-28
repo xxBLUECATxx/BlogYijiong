@@ -2,6 +2,12 @@
   "title": "Recent posts",
   "items": [
     {
+      "title": "5 Jul 25 - 9 Jul 25, trip to Beijing InnerMongolia",
+      "permalink": "/blog/trip to Beijing InnerMongolia",
+      "unlisted": false,
+      "date": "2025-06-28T08:56:13.586Z"
+    },
+    {
       "title": "Welcome",
       "permalink": "/blog/welcome",
       "unlisted": false,
@@ -12,18 +18,6 @@
       "permalink": "/blog/mdx-blog-post",
       "unlisted": false,
       "date": "2021-08-01T00:00:00.000Z"
-    },
-    {
-      "title": "Long Blog Post",
-      "permalink": "/blog/long-blog-post",
-      "unlisted": false,
-      "date": "2019-05-29T00:00:00.000Z"
-    },
-    {
-      "title": "First Blog Post",
-      "permalink": "/blog/first-blog-post",
-      "unlisted": false,
-      "date": "2019-05-28T00:00:00.000Z"
     }
   ]
 }

@@ -15,7 +15,7 @@
   },
   "sidebar": "tutorialSidebar",
   "previous": {
-    "title": "技術",
-    "permalink": "/docs/category/技術"
+    "title": "解決 Aliyun ECS 自定義 Service 的 ExecStart 路徑失效問題",
+    "permalink": "/docs/tech/Service-ExecStart-Path-Aliyun"
   }
 }

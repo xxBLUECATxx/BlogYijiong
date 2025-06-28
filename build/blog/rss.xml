@@ -4,10 +4,20 @@
         <title>BlogYijiong - 博客黃狗熊 Blog</title>
         <link>https://xxbluecatxx.github.io./blog</link>
         <description>BlogYijiong - 博客黃狗熊 Blog</description>
-        <lastBuildDate>Thu, 26 Aug 2021 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 28 Jun 2025 08:56:13 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[5 Jul 25 - 9 Jul 25, trip to Beijing InnerMongolia]]></title>
+            <link>https://xxbluecatxx.github.io./blog/trip to Beijing InnerMongolia</link>
+            <guid>https://xxbluecatxx.github.io./blog/trip to Beijing InnerMongolia</guid>
+            <pubDate>Sat, 28 Jun 2025 08:56:13 GMT</pubDate>
+            <description><![CDATA[It is hard to buy the cheapest ticket at the same time fits your schedule, so I spent 1700 hkd to Beijing and 1200 hkd back to hongkong (flight from Ordos, InnerMango)]]></description>
+            <content:encoded><![CDATA[<p>It is hard to buy the cheapest ticket at the same time fits your schedule, so I spent 1700 hkd to Beijing and 1200 hkd back to hongkong (flight from Ordos, InnerMango)</p>
+<table><thead><tr><th><strong>Expense Category</strong></th><th><strong>Description</strong></th><th><strong>Cost (HKD)</strong></th></tr></thead><tbody><tr><td><strong>Flights</strong></td><td>HongKong to Beijing</td><td>1,700</td></tr><tr><td></td><td>Ordos to HongKong</td><td>1,200</td></tr><tr><td><strong>Total Flights</strong></td><td></td><td><strong>2,900</strong></td></tr></tbody></table>]]></content:encoded>
+            <category>travelling</category>
+        </item>
         <item>
             <title><![CDATA[Welcome]]></title>
             <link>https://xxbluecatxx.github.io./blog/welcome</link>
@@ -43,44 +53,6 @@
 <p>For example, use JSX to create an interactive button:</p>
 <div class="language-js codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#F8F8F2;--prism-background-color:#282A36"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-js codeBlock_bY9V thin-scrollbar" style="color:#F8F8F2;background-color:#282A36"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#F8F8F2"><span class="token operator">&lt;</span><span class="token plain">button onClick</span><span class="token operator">=</span><span class="token punctuation" style="color:rgb(248, 248, 242)">{</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token plain"> </span><span class="token arrow operator">=&gt;</span><span class="token plain"> </span><span class="token function" style="color:rgb(80, 250, 123)">alert</span><span class="token punctuation" style="color:rgb(248, 248, 242)">(</span><span class="token string" style="color:rgb(255, 121, 198)">'button clicked!'</span><span class="token punctuation" style="color:rgb(248, 248, 242)">)</span><span class="token punctuation" style="color:rgb(248, 248, 242)">}</span><span class="token operator">&gt;</span><span class="token maybe-class-name">Click</span><span class="token plain"> me</span><span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span><span class="token plain">button</span><span class="token operator">&gt;</span><br></span></code></pre></div></div>
 <button>Click me!</button>]]></content:encoded>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[Long Blog Post]]></title>
-            <link>https://xxbluecatxx.github.io./blog/long-blog-post</link>
-            <guid>https://xxbluecatxx.github.io./blog/long-blog-post</guid>
-            <pubDate>Wed, 29 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[This is the summary of a very long blog post,]]></description>
-            <content:encoded><![CDATA[<p>This is the summary of a very long blog post,</p>
-<p>Use a <code>&lt;!--</code> <code>truncate</code> <code>--&gt;</code> comment to limit blog post size in the list view.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hello</category>
-            <category>Docusaurus</category>
-        </item>
-        <item>
-            <title><![CDATA[First Blog Post]]></title>
-            <link>https://xxbluecatxx.github.io./blog/first-blog-post</link>
-            <guid>https://xxbluecatxx.github.io./blog/first-blog-post</guid>
-            <pubDate>Tue, 28 May 2019 00:00:00 GMT</pubDate>
-            <description><![CDATA[Lorem ipsum dolor sit amet...]]></description>
-            <content:encoded><![CDATA[<p>Lorem ipsum dolor sit amet...</p>
-<p>...consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content:encoded>
-            <category>Hola</category>
             <category>Docusaurus</category>
         </item>
     </channel>
